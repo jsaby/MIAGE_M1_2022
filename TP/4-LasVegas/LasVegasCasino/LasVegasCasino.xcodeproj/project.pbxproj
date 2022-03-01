@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3073288C1D96E94100FB60CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073288B1D96E94100FB60CA /* AppDelegate.swift */; };
+		3073288E1D96E94100FB60CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073288D1D96E94100FB60CA /* ViewController.swift */; };
+		307328911D96E94100FB60CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073288F1D96E94100FB60CA /* Main.storyboard */; };
+		307328931D96E94100FB60CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307328921D96E94100FB60CA /* Assets.xcassets */; };
+		307328961D96E94100FB60CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307328941D96E94100FB60CA /* LaunchScreen.storyboard */; };
+		307328A01D96E99000FB60CA /* winSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3073289E1D96E99000FB60CA /* winSoundEffect.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		307328881D96E94100FB60CA /* LasVegasCasino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LasVegasCasino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3073288B1D96E94100FB60CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3073288D1D96E94100FB60CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307328901D96E94100FB60CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		307328921D96E94100FB60CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307328951D96E94100FB60CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		307328971D96E94100FB60CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3073289E1D96E99000FB60CA /* winSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winSoundEffect.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307328851D96E94100FB60CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3073287F1D96E94100FB60CA = {
+			isa = PBXGroup;
+			children = (
+				3073288A1D96E94100FB60CA /* LasVegasCasino */,
+				307328891D96E94100FB60CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		307328891D96E94100FB60CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				307328881D96E94100FB60CA /* LasVegasCasino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3073288A1D96E94100FB60CA /* LasVegasCasino */ = {
+			isa = PBXGroup;
+			children = (
+				307328A11D96E99A00FB60CA /* assets */,
+				3073288B1D96E94100FB60CA /* AppDelegate.swift */,
+				3073288D1D96E94100FB60CA /* ViewController.swift */,
+				3073288F1D96E94100FB60CA /* Main.storyboard */,
+				307328921D96E94100FB60CA /* Assets.xcassets */,
+				307328941D96E94100FB60CA /* LaunchScreen.storyboard */,
+				307328971D96E94100FB60CA /* Info.plist */,
+			);
+			path = LasVegasCasino;
+			sourceTree = "<group>";
+		};
+		307328A11D96E99A00FB60CA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3073289E1D96E99000FB60CA /* winSoundEffect.mp3 */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		307328871D96E94100FB60CA /* LasVegasCasino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3073289A1D96E94100FB60CA /* Build configuration list for PBXNativeTarget "LasVegasCasino" */;
+			buildPhases = (
+				307328841D96E94100FB60CA /* Sources */,
+				307328851D96E94100FB60CA /* Frameworks */,
+				307328861D96E94100FB60CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LasVegasCasino;
+			productName = LasVegasCasino;
+			productReference = 307328881D96E94100FB60CA /* LasVegasCasino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307328801D96E94100FB60CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Sandy L";
+				TargetAttributes = {
+					307328871D96E94100FB60CA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XMC756ZKS8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 307328831D96E94100FB60CA /* Build configuration list for PBXProject "LasVegasCasino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 3073287F1D96E94100FB60CA;
+			productRefGroup = 307328891D96E94100FB60CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				307328871D96E94100FB60CA /* LasVegasCasino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		307328861D96E94100FB60CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307328961D96E94100FB60CA /* LaunchScreen.storyboard in Resources */,
+				307328931D96E94100FB60CA /* Assets.xcassets in Resources */,
+				307328A01D96E99000FB60CA /* winSoundEffect.mp3 in Resources */,
+				307328911D96E94100FB60CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307328841D96E94100FB60CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3073288E1D96E94100FB60CA /* ViewController.swift in Sources */,
+				3073288C1D96E94100FB60CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3073288F1D96E94100FB60CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307328901D96E94100FB60CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		307328941D96E94100FB60CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307328951D96E94100FB60CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		307328981D96E94100FB60CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307328991D96E94100FB60CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3073289B1D96E94100FB60CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XMC756ZKS8;
+				INFOPLIST_FILE = LasVegasCasino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliesaby.roulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3073289C1D96E94100FB60CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XMC756ZKS8;
+				INFOPLIST_FILE = LasVegasCasino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliesaby.roulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307328831D96E94100FB60CA /* Build configuration list for PBXProject "LasVegasCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307328981D96E94100FB60CA /* Debug */,
+				307328991D96E94100FB60CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3073289A1D96E94100FB60CA /* Build configuration list for PBXNativeTarget "LasVegasCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3073289B1D96E94100FB60CA /* Debug */,
+				3073289C1D96E94100FB60CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307328801D96E94100FB60CA /* Project object */;
+}

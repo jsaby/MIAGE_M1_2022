@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-9z-Dm0">
+                                <rect key="frame" x="48" y="80" width="297" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="Jqr-3h-0KT"/>
+                                    <constraint firstAttribute="height" constant="60" id="O2p-9s-TlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="QgU-G8-adC">
+                                <rect key="frame" x="70.5" y="185" width="234" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5F-ch-8kJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lzk-ds-Jy2"/>
+                                        </constraints>
+                                        <state key="normal" title="Démarrer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="activerMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5f-za-iTs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-wG-gE6">
+                                        <rect key="frame" x="134" y="0.0" width="100" height="60"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Sjk-Jv-Zju"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" red="1" green="0.14846486410000001" blue="0.31922026689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIP-Tj-DGC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x5F-ch-8kJ" firstAttribute="top" secondItem="QgU-G8-adC" secondAttribute="top" id="2RR-hb-6fk"/>
+                                    <constraint firstAttribute="trailing" secondItem="OxA-wG-gE6" secondAttribute="trailing" id="3RA-Dg-g5h"/>
+                                    <constraint firstAttribute="height" constant="60" id="CXQ-4U-xfP"/>
+                                    <constraint firstItem="x5F-ch-8kJ" firstAttribute="leading" secondItem="QgU-G8-adC" secondAttribute="leading" id="WrJ-mI-iCs"/>
+                                    <constraint firstItem="OxA-wG-gE6" firstAttribute="top" secondItem="QgU-G8-adC" secondAttribute="top" id="lqb-8C-U1E"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXC-UQ-m8v">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOy-fz-yjs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZGc-Me-lRG"/>
+                                </constraints>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="Une-xB-jKT"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZOy-fz-yjs" secondAttribute="trailing" id="0y2-x3-H6X"/>
+                            <constraint firstItem="cgt-9z-Dm0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Fmx-jb-4Lv"/>
+                            <constraint firstItem="QgU-G8-adC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Izj-wa-DTZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yXC-UQ-m8v" secondAttribute="bottom" id="KPl-g0-y8j"/>
+                            <constraint firstItem="ZOy-fz-yjs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nip-dX-tYf"/>
+                            <constraint firstItem="cgt-9z-Dm0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="9" id="Pbf-fL-DBh"/>
+                            <constraint firstItem="QgU-G8-adC" firstAttribute="top" secondItem="cgt-9z-Dm0" secondAttribute="bottom" constant="45" id="hA2-1p-uij"/>
+                            <constraint firstItem="yXC-UQ-m8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jng-OY-K7q"/>
+                            <constraint firstItem="ZOy-fz-yjs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kka-Vo-jAF"/>
+                            <constraint firstAttribute="trailing" secondItem="yXC-UQ-m8v" secondAttribute="trailing" id="shG-Co-0hL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activerMinuteurBtn" destination="x5F-ch-8kJ" id="Llt-IO-ZVQ"/>
+                        <outlet property="minuteurLabel" destination="cgt-9z-Dm0" id="PTO-gR-RBn"/>
+                        <outlet property="navBar" destination="ZOy-fz-yjs" id="t2c-tS-gDu"/>
+                        <outlet property="pickerView" destination="yXC-UQ-m8v" id="Tat-he-K5r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
